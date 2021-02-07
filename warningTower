@@ -1,0 +1,145 @@
+local CrystalHubWarning = Instance.new("ScreenGui")
+local WarningMain = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("ImageLabel")
+local error = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Back = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Continue = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+
+
+CrystalHubWarning.Name = "CrystalHubWarning"
+CrystalHubWarning.Parent = game.CoreGui
+
+WarningMain.Name = "WarningMain"
+WarningMain.Parent = CrystalHubWarning
+WarningMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WarningMain.BackgroundTransparency = 1.000
+WarningMain.Position = UDim2.new(0.337000072, 0, 1, 0)
+WarningMain.Size = UDim2.new(0, 357, 0, 138)
+WarningMain.Image = "rbxassetid://3570695787"
+WarningMain.ImageColor3 = Color3.fromRGB(17, 17, 17)
+WarningMain.ScaleType = Enum.ScaleType.Slice
+WarningMain.SliceCenter = Rect.new(100, 100, 100, 100)
+WarningMain.SliceScale = 0.050
+
+TextLabel.Parent = WarningMain
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.445378155, 0, 0.0064516128, 0)
+TextLabel.Size = UDim2.new(0, 70, 0, 29)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Warning"
+TextLabel.TextColor3 = Color3.fromRGB(198, 198, 198)
+TextLabel.TextSize = 16.000
+
+Frame.Name = "Frame"
+Frame.Parent = WarningMain
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.336134464, 0, 0, 0)
+Frame.Size = UDim2.new(0, 116, 0, 32)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(36, 36, 36)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.050
+
+error.Name = "error"
+error.Parent = WarningMain
+error.BackgroundTransparency = 1.000
+error.Position = UDim2.new(0.352941185, 0, 0.0193548389, 0)
+error.Size = UDim2.new(0, 25, 0, 25)
+error.ZIndex = 2
+error.Image = "rbxassetid://3926305904"
+error.ImageColor3 = Color3.fromRGB(117, 117, 117)
+error.ImageRectOffset = Vector2.new(964, 84)
+error.ImageRectSize = Vector2.new(36, 36)
+
+TextLabel_2.Parent = WarningMain
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0504201688, 0, 0.387798011, 0)
+TextLabel_2.Size = UDim2.new(0, 321, 0, 30)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "You Are Going To Execute Tower Of Hell Script"
+TextLabel_2.TextColor3 = Color3.fromRGB(121, 157, 255)
+TextLabel_2.TextSize = 14.000
+
+Back.Name = "Back"
+Back.Parent = WarningMain
+Back.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Back.Position = UDim2.new(0.0504201688, 0, 0.645161271, 0)
+Back.Size = UDim2.new(0, 115, 0, 36)
+Back.Font = Enum.Font.GothamBold
+Back.Text = "Back"
+Back.TextColor3 = Color3.fromRGB(255, 255, 255)
+Back.TextSize = 14.000
+Back.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Back
+
+Continue.Name = "Continue"
+Continue.Parent = WarningMain
+Continue.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Continue.Position = UDim2.new(0.579831958, 0, 0.645161271, 0)
+Continue.Size = UDim2.new(0, 115, 0, 36)
+Continue.Font = Enum.Font.GothamBold
+Continue.Text = "Continue"
+Continue.TextColor3 = Color3.fromRGB(255, 255, 255)
+Continue.TextSize = 14.000
+Continue.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = Continue
+
+ImageLabel.Parent = WarningMain
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(-0.0196078438, 0, -0.101449274, 0)
+ImageLabel.Size = UDim2.new(0, 74, 0, 74)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6349572499"
+
+-- Scripts:
+
+local function NPYI_fake_script() -- Back.Effect 
+	local script = Instance.new('LocalScript', Back)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(121, 157, 255)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(17, 17, 17)}):Play()
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+	    WarningMain:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalHub1/CrystalHub/main/CrystalHub", true))()
+	end)
+end
+coroutine.wrap(NPYI_fake_script)()
+local function WWVKT_fake_script() -- Continue.Effect 
+	local script = Instance.new('LocalScript', Continue)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(121, 157, 255)}):Play()
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(17, 17, 17)}):Play()
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+        CrystalHubWarning:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalHub1/CrystalHubTower/main/CrystalHubTowerOfHell", true))()
+	end)
+end
+coroutine.wrap(WWVKT_fake_script)()
+local function VZPPR_fake_script() -- WarningMain.LocalScript 
+	local script = Instance.new('LocalScript', WarningMain)
+
+	script.Parent:TweenPosition(UDim2.new(0.337, 0,0.368, 0), "In", "Quint", 2)
+end
+coroutine.wrap(VZPPR_fake_script)()
