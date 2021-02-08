@@ -118,7 +118,7 @@ local function NPYI_fake_script() -- Back.Effect
 	end)
 	script.Parent.MouseButton1Click:Connect(function()
 	    WarningMain:Destroy()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalHub1/CrystalHub/main/CrystalHub", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalHub1/CrystalHub/main/CrystalHub1", true))()
 	end)
 end
 coroutine.wrap(NPYI_fake_script)()
